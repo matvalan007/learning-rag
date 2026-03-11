@@ -11,7 +11,7 @@ print("✅ Environment variables loaded successfully.")
 
 def load_documents(docs_path="docs"):
     """Load all text files from the docs directory"""
-    print(f"Loading documents from {docs_path}...")
+    print(f"Adding documents from {docs_path}...")
     
     # Check if docs directory exists
     if not os.path.exists(docs_path):
