@@ -23,6 +23,12 @@ def load_documents(docs_path="docs"):
         glob="*.txt",
         loader_cls=TextLoader
     )
+
+    pdf_loader = DirectoryLoader(
+        path=docs_path,
+        glob="*.pdf",
+        loader_cls=pdfloader
+    )
     
     documents = loader.load()
     
